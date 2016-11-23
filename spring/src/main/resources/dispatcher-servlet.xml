@@ -18,16 +18,6 @@
     </bean>
 
     <aop:aspectj-autoproxy proxy-target-class="true" />
-    <context:component-scan base-package="heller"/>
-
-    <bean id="userServiceImpl" class="heller.spring.ioc.service.UserServiceImpl">
-        <property name="userManagerList">
-            <list>
-                <ref bean="userManagerImpl"/>
-                <ref bean="userManagerCustomImpl"/>
-            </list>
-        </property>
-    </bean>
-
+    <context:component-scan base-package="heller.spring.ioc.web"/>
 
 </beans>

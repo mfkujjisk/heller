@@ -5,15 +5,25 @@ import heller.spring.ioc.manager.UserManager;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by zhouzhanghe on 2016/11/15.
  */
 public class UserServiceImpl implements UserService {
-    @Resource
-    private UserManager userManager;
+    List<UserManager> userManagerList;
+
+    public List<UserManager> getUserManagerList() {
+        return userManagerList;
+    }
+
+    public void setUserManagerList(List<UserManager> userManagerList) {
+        this.userManagerList = userManagerList;
+    }
 
     public void save(User user) {
-        userManager.save(user);
+        for(UserManager userManager : userManagerList){
+            userManager.save(user);
+        }
     }
 }
