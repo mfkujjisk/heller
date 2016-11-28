@@ -15,6 +15,7 @@
 
     <properties>
         <log4j12.version>1.7.2</log4j12.version>
+        <fastjson.version>1.2.21</fastjson.version>
     </properties>
 
 
@@ -23,6 +24,11 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${log4j12.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
     </dependencies>
 
