@@ -20,6 +20,8 @@ public class NetWorkFileSync {
 
         List<File> sourceFiles = getFiles(new File("d:/网盘同步"));
         copyFiles(sourceFiles,"z");
+        sourceFiles = getFiles(new File("z:/网盘同步"));
+        copyFiles(sourceFiles,"d");
         //sycDelFile(destinationFiles,"d");
     }
 
