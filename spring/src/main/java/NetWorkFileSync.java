@@ -17,7 +17,6 @@ public class NetWorkFileSync {
 
     public static void main(String[] args) throws IOException {
 
-
         List<File> sourceFiles = getFiles(new File("d:/网盘同步"));
         copyFiles(sourceFiles,"z");
         sourceFiles = getFiles(new File("z:/网盘同步"));

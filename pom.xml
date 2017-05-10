@@ -11,13 +11,16 @@
     <modules>
         <module>spring</module>
         <module>util</module>
+        <module>hsf</module>
+        <module>metaq</module>
+        <module>mybatis</module>
+        <module>javabasic</module>
     </modules>
 
     <properties>
         <log4j12.version>1.7.2</log4j12.version>
         <fastjson.version>1.2.21</fastjson.version>
     </properties>
-
 
     <dependencies>
         <dependency>
@@ -29,6 +32,14 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
+        </dependency>
+
+        <!-- 单元测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
